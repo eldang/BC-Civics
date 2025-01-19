@@ -24,27 +24,28 @@ I haven't built anything yet, so far I'm just using this repository to keep trac
 Unfortunately the boundaries of full postcodes are proprietary data and expensive to buy.  But the API behind https://www.leg.bc.ca/members isn't terribly difficult to use:
 
 `POST` request to `https://lims.leg.bc.ca/graphql`
+
 Request body: `{"operationName":"GetMLAName","variables":{"postalCode":"X0X0X0"},"query":"query GetMLAName($postalCode: String!) { allPostalCodeLookups(condition: {postalCode: $postalCode}) { nodes { constituencyByConstituencyId { memberByMemberId { firstName lastName __typename } } } }}"}`
 
 Gets a response like this:
 
 ```json
 {
-    "data": {
-        "allPostalCodeLookups": {
-            "nodes": [
-                {
-                    "constituencyByConstituencyId": {
-                        "memberByMemberId": {
-                            "firstName": "Darlene",
-                            "lastName": "Rotchford",
-                            "__typename": "Member"
-                        }
-                    }
-                }
-            ]
+  "data": {
+    "allPostalCodeLookups": {
+      "nodes": [
+        {
+          "constituencyByConstituencyId": {
+            "memberByMemberId": {
+              "firstName": "Darlene",
+              "lastName": "Rotchford",
+              "__typename": "Member"
+            }
+          }
         }
+      ]
     }
+  }
 }
 ```
 
