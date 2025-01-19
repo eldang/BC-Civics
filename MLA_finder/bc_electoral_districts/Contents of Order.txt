@@ -1,0 +1,14 @@
+------------------
+Order Details
+-----------------
+Order ID: 2427129
+Date: 20250118
+
+----------------------
+Feature Types
+-----------------------
+ - Prov. Electoral Districts - Electoral Boundaries Redist., 2023 in subdirectory EBC_ELECTORAL_DISTS_BS11_SVW
+
+----------------------------
+Packaged Products
+----------------------------
