@@ -59,7 +59,5 @@ The first half of a Canadian postcode is called the "Forward Sortation Area", an
 
 #### Data sources
 
-* FSAs and *federal* electoral districts are available from https://www12.statcan.gc.ca/census-recensement/2021/geo/sip-pis/boundary-limites/index2021-eng.cfm?year=21 .  A BC-only extract from this is stored here as `bc_fsas.gpkg`
+* FSAs and *federal* electoral districts are available from https://www12.statcan.gc.ca/census-recensement/2021/geo/sip-pis/boundary-limites/index2021-eng.cfm?year=21 .  A BC-only extract from this, reprojected to BC-Albers for consistency with the province's data, is stored here as `bc_fsas.gpkg`
 * BC *provincial* electoral districts are available from https://elections.bc.ca/resources/maps/gis-spatial-data/ .  Note that this system doesn't allow for instant downloads; you have to make a request and it emails you later.  In my experience it doesn't take very long.  A copy of the 2024 electoral districts is stored here in the `bc_electoral_districts` folder with all the metadata it came packaged with.
-
-
